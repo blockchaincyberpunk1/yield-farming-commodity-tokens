@@ -1,0 +1,28 @@
+To-Do List
+Smart Contract Development:
+Write the CommodityToken.sol contract to define the commodity-backed token logic.
+Write the YieldFarming.sol contract to handle staking, unstaking, and yield distribution.
+Ensure contracts are upgradable if business logic changes.
+Testing:
+Write tests for CommodityToken.sol in commodityToken.test.js.
+Write tests for YieldFarming.sol in yieldFarming.test.js.
+Use Hardhat's network to run tests to ensure all functionalities work as expected.
+Frontend Development:
+Set up the React project within the frontend/ directory.
+Develop the StakeForm.js component for users to stake their tokens.
+Develop the YieldView.js component to display the accrued yield to the users.
+Ensure the frontend is responsive and user-friendly.
+Deployment and Integration:
+Create a script in deploy.js to deploy smart contracts using Hardhat.
+Configure Hardhat to deploy to a test network (e.g., Rinkeby) and eventually to the main network.
+Integrate the frontend with the smart contracts using Ethers.js to enable interactive transactions.
+Environment Setup:
+Set up .env with necessary configuration settings (e.g., private keys, Infura endpoint).
+Configure hardhat.config.js for development and production environments.
+Testing and Launch:
+Conduct thorough testing of the entire application, both contracts and frontend.
+Deploy the application to a testnet for live testing.
+Adjust based on feedback and prepare for final deployment.
+Maintenance and Updates:
+Monitor contracts and frontend for any issues.
+Plan for future updates and potential scaling solutions.

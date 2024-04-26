@@ -1,0 +1,70 @@
+yield-farming-commodity-tokens/
+│
+├── contracts/            # Smart contracts
+│   ├── CommodityToken.sol       # Commodity-backed token contract
+│   └── YieldFarming.sol          # Yield farming logic contract
+│
+├── test/                 # Contract tests
+│   ├── commodityToken.test.js   # Tests for commodity token contract
+│   └── yieldFarming.test.js     # Tests for yield farming contract
+│
+├── scripts/              # Deployment scripts
+│   └── deploy.js                # Script to deploy contracts
+│
+├── frontend/             # React frontend application
+│   ├── src/              
+│   │   ├── components/          # UI components
+│   │   │   ├── StakeForm.js     # Form to stake tokens
+│   │   │   └── YieldView.js     # View to display yields
+│   │   ├── App.js               # Main React application file
+│   │   ├── index.js             # Entry point for React app
+│   │   └── styles/              # Stylesheets
+│   │       └── main.css         # Main stylesheet
+│   ├── public/
+│   │   └── index.html           # HTML template
+│   └── package.json             # NPM package manager file
+│
+├── hardhat.config.js     # Hardhat configuration file
+└── .env                  # Environment variables for deployment
+
+
+Task List and Coding Order
+1. Smart Contract Development
+Files to Code:
+CommodityToken.sol: Define the ERC-20 token representing the commodity-backed tokens.
+YieldFarming.sol: Implements the logic for staking tokens, calculating yields, and distributing rewards.
+2. Smart Contract Testing
+Files to Code:
+commodityToken.test.js: Tests the functionalities of CommodityToken.sol like token issuance, transfers, and allowances.
+yieldFarming.test.js: Tests the staking, yield calculation, and reward distribution functionalities of YieldFarming.sol.
+3. Deployment Scripts
+Files to Code:
+deploy.js: Script to deploy the contracts to the Ethereum network using Hardhat.
+4. Frontend Development
+Files to Code:
+src/index.js: Entry point for the React application, setting up the main rendering.
+src/App.js: Main application component, which integrates all sub-components.
+src/components/StakeForm.js: Component to handle the staking of commodity tokens.
+src/components/YieldView.js: Component to display the calculated yields to the user.
+src/styles/main.css: Main CSS file for styling the frontend components.
+public/index.html: Basic HTML template for the React application.
+5. Environment and Configuration Setup
+Files to Code:
+.env: Environment variables including private keys and network URLs.
+hardhat.config.js: Hardhat configuration for networks and other project settings.
+Suggested Coding Order:
+Start with Smart Contracts:
+Code CommodityToken.sol first as it's the foundation for the tokenomics.
+Follow up with YieldFarming.sol, which depends on the commodity token logic.
+Move to Contract Testing:
+Test CommodityToken.sol with commodityToken.test.js.
+Test YieldFarming.sol with yieldFarming.test.js to ensure the main logic works correctly.
+Set Up Deployment Scripts:
+Prepare deploy.js to facilitate easy and efficient deployment of the contracts.
+Develop the Frontend:
+Start with src/index.js and src/App.js to set up the basic React structure.
+Code src/components/StakeForm.js and src/components/YieldView.js to enable user interaction.
+Style the components using src/styles/main.css.
+Ensure the public/index.html is correctly set up to host the React app.
+Finalize Environment and Configuration:
+Configure hardhat.config.js and .env for development and production environments.

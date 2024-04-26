@@ -1,0 +1,25 @@
+Tech Stack Details
+Blockchain Development:
+Solidity: Primary language for writing smart contracts.
+Hardhat: Framework for Ethereum development used for compiling, deploying, testing, and debugging Ethereum software.
+Ethers.js: JavaScript library that interacts with the Ethereum blockchain, useful for front-end interaction with the smart contracts.
+Frontend Development:
+React.js: A JavaScript library for building user interfaces. It's efficient and flexible, making it ideal for rapid development and dynamic page updates.
+Web3.js: As an alternative to Ethers.js, Web3.js is another popular library for interacting with Ethereum nodes using HTTP, IPC, or WebSocket.
+Testing and Security:
+Waffle: Lightweight framework for testing Ethereum contracts that works seamlessly with Hardhat.
+Chai: Assertion library for Node.js and the browser that can be paired with any JavaScript testing framework.
+Version Control and Collaboration:
+Git: For version control, allowing multiple developers to work together efficiently.
+GitHub: Hosts the repository and facilitates collaboration, issue tracking, and code review.
+Deployment and Maintenance:
+Infura: Provides Ethereum node infrastructure for deploying and running the dApp without requiring a full node.
+MetaMask: A browser extension that allows users to manage accounts and their identities and is used for direct interaction with dApps.
+Styling and Components:
+Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+Project Design and Implementation
+Smart Contracts: Develop commodity-backed token contracts and yield farming mechanics using Solidity.
+Contract Testing: Utilize Hardhat alongside Waffle and Chai for comprehensive testing of contracts.
+Frontend Interface: Implement the frontend using React.js, utilizing libraries like Ethers.js or Web3.js for blockchain interactions.
+Deployment: Use Hardhat for deploying contracts to the Ethereum network via Infura.
+User Interaction: Integrate MetaMask for user authentication and transactions.
